@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<meta name="referrer" content="no-referrer"/>
+		<meta name="color-scheme" content="dark"/>
+		<meta name="darkreader-lock"/>
+		<meta name="desciption" content="Every program I've ever put online or contributed to."/>
+		<link rel="stylesheet" href="/styles.css"/>
+		<title>Sparronator9999's Projects</title>
+	</head>
+	<body>
+		<div class="nav-wrapper">
+			<nav>
+				<a href="/">Home</a>
+				<a href="/projects/" class="nav-here">Projects</a>
+				<a href="https://github.com/Sparronator9999">GitHub</a>
+			</nav>
+		</div>
+		<main>
+			<div class="content">
+				<h1>All projects</h1>
+				<p>A list of projects that I created or contributed in some way to. Each sub-category is sorted roughly by popularity and "usefulness".</p>
+				<h2>Projects created by me</h2>
+				<p>All of my projects are licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License v3+</a>, unless otherwise stated on the project page.</p>
+				<ul class="cardlist">
+					<li>
+						<img src="/media/icons/YAMDCC.png" style="image-rendering: pixelated;" alt="YAMDCC logo"></img>
+						<div class="card-desc">
+							<h3><a href="https://github.com/Sparronator9999/YAMDCC">YAMDCC</a></h3>
+							<p>The first project I ever released on GitHub. It, among other things, controls the fan speed of MSI laptops. I originally wrote it ~mid-2023 to control my own laptop's fans and charge limit, but decided in 2024 to clean up the code and publish it to GitHub. Since then it has gained a moderate following of <a href="https://github.com/Sparronator9999/YAMDCC/stargazers">over 100 stars</a>.</p>
+						</div>
+						<a href="https://github.com/Sparronator9999/YAMDCC" class="mainlink" aria-label="View YAMDCC on GitHub"></a>
+					</li>
+					<li>
+						<img src="/media/icons/OBC.png" alt="OpenBootCamp logo"></img>
+						<div class="card-desc">
+							<h3><a href="https://github.com/Sparronator9999/OpenBootCamp">OpenBootCamp (OBC)</a></h3>
+							<p>Basically YAMDCC for Apple computers at this point, but with special Fn key handling. Created to fix bugs with special Fn keys under regular Boot Camp Assistant (from not remembering the keyboard backlight brightness, to straight up not working at all), but has since evolved to include fan control and battery charge limiting (hence "YAMDCC for Apple computers"). Config GUI is still a WIP, mainly due to the fact this project is much less popular than YAMDCC.</p>
+						</div>
+						<a href="https://github.com/Sparronator9999/OpenBootCamp" class="mainlink" aria-label="View OpenBootCamp on GitHub"></a>
+					</li>
+					<li>
+						<img src="/media/icons/RRT.png" style="image-rendering: pixelated;" alt="Refresh Rate Tuner logo"></img>
+						<div class="card-desc">
+							<h3><a href="https://github.com/Sparronator9999/RefreshRateTuner">Refresh Rate Tuner</a></h3>
+							<p>A very simple app that changes your laptop display's refresh rate based on whether it's plugged in or not. Written in response to a YAMDCC feature request. I personally have no use for this app, as none of my computers have a display refresh rate of over 60 Hz.</p>
+						</div>
+						<a href="https://github.com/Sparronator9999/RefreshRateTuner" class="mainlink" aria-label="View Refresh Rate Tuner on GitHub"></a>
+					</li>
+					<li>
+						<div class="img-placeholder"></div>
+						<div class="card-desc">
+							<h3><a href="/prophgen/">Prophecy Pane Generator</a></h3>
+							<p>A WIP webpage to faithfully recreate <a href="https://deltarune.wiki/w/File:Dark_Sanctuary_location.png">prophecy panes</a> from Deltarune Chapter 4. Currently only able to generate the graphic used on <a href="/">the homepage</a> (at least not without manual CSS editing).</p>
+						</div>
+						<a href="/prophgen/" class="mainlink" aria-desc="Go to Prophecy Pane Generator webpage"></a>
+					</li>
+					<li>
+						<div class="img-placeholder"></div>
+						<div class="card-desc">
+							<h3><a href="https://github.com/Sparronator9999/KernelDriverLib">KernelDriverLib</a></h3>
+							<p>A C# library for installing and communicating with Windows kernel drivers. Originally developed for YAMDCC, but I decided to spin it off into its own project in case future C# developers need this.</p>
+						</div>
+						<a href="https://github.com/Sparronator9999/KernelDriverLib" class="mainlink" aria-label="View KernelDriverLib on GitHub"></a>
+					</li>
+				</ul>
+				<h2>Projects I've forked</h2>
+				<ul class="cardlist">
+					<li>
+						<div class="img-placeholder"></div>
+						<div class="card-desc">
+							<h3><a href="https://github.com/Sparronator9999/NamedPipeWrapper">Named Pipe Wrapper</a></h3>
+							<p>A C# library for inter-process communication (IPC) between processes. Forked for use in <a href="https://github.com/Sparronator9999/YAMDCC">YAMDCC</a>. Because of this, new features added to this fork are influenced by that app's needs.</p>
+						</div>
+						<a href="https://github.com/Sparronator9999/NamedPipeWrapper" class="mainlink" aria-label="View NamedPipeWrapper on GitHub"></a>
+					</li>
+					<li>
+						<div class="img-placeholder"></div>
+						<div class="card-desc">
+							<h3><a href="https://github.com/Sparronator9999/OpenFreezeCenter-Lite">OpenFreezeCenter-Lite</a></h3>
+							<p>Another fan control program for MSI laptops, this time for Linux. This fork contains a bug fix that has had an <a href="https://github.com/YoCodingMonster/OpenFreezeCenter-Lite/pull/6">open pull request</a> for the past year. I'd use <a href="https://github.com/dmitry-s93/MControlCenter">MControlCenter</a> instead.</p>
+						</div>
+						<a href="https://github.com/Sparronator9999/OpenFreezeCenter-Lite" class="mainlink" aria-label="View OpenFreezeCenter-Lite on GitHub"></a>
+					</li>
+				</ul>
+				<h2>Projects I've contributed to</h2>
+				<ul class="cardlist">
+					<li>
+						<img src="/media/icons-3p/melonDS.png" alt="melonDS logo"></img>
+						<div class="card-desc">
+							<h3><a href="https://melonds.kuribo64.net/">melonDS</a></h3>
+							<p>I'm the guy responsible for fixing melonDS's horrendous audio latency in time for <a href="https://github.com/melonDS-emu/melonDS/releases/tag/1.0">release 1.0</a>. You're welcome, Rhythm Heaven enthusiasts.</p>
+						</div>
+						<a href="https://melonds.kuribo64.net/" class="mainlink" aria-label="Go to melonDS's website"></a>
+					</li>
+					<!--<li>
+						<img src="/media/icons-3p/GB.svg" alt="Gadgetbridge logo"></img>
+						<div class="card-desc">
+							<h3><a href="https://gadgetbridge.org/">Gadgetbridge</a></h3>
+							<p>TODO</p>
+						</div>
+						<a href="https://gadgetbridge.org/" class="mainlink"></a>
+					</li>-->
+				</ul>
+			</div>
+		</main>
+		<div class="footer-wrapper">
+			<footer>
+				<p><a href="#">Back to top</a></p>
+				<p>🚧 Website under construction, please be patient! 🚧</p>
+				<small><p>Copyright © Sparronator9999 2025. Unless otherwise noted, the contents of this website are licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+				<p>Made in Australia from 100% Australian contributions.</p>
+				<p>Last updated: 25/09/2025</p></small>
+			</footer>
+		</div>
+	</body>
+</html>

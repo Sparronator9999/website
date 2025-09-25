@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<meta name="referrer" content="no-referrer"/>
+		<meta name="color-scheme" content="dark"/>
+		<meta name="darkreader-lock"/>
+		<meta name="desciption" content="A fast and accurate Deltarune Chapter 4 prophecy pane generator, written entirely in raw HTML/CSS."/>
+		<link rel="stylesheet" href="/styles.css"/>
+		<link rel="stylesheet" href="/prophgen/prophgen.css"/>
+		<title>Deltarune ProphGen</title>
+	</head>
+	<body>
+		<div class="nav-wrapper">
+			<nav>
+				<a href="/">Home</a>
+				<a href="/projects/" class="nav-here">Projects</a>
+				<a href="https://github.com/Sparronator9999">GitHub</a>
+			</nav>
+		</div>
+		<main>
+			<div class="content">
+				<h1>Deltarune Prophecy Pane Generator</h1>
+			</div>
+			<div class="prophecy">
+				<div class="prophmg"></div>
+				<div class="prophfg prophfg3"></div>
+				<div class="prophfg prophfg2"></div>
+				<div class="prophfg"></div>
+				<div class="prophbg">
+					<div class="prophmg"></div>
+				</div>
+				<div class="prophtext"></div>
+			</div>
+			<div class="content">
+				<p><center><small>If something seems off, see <a href="#troubleshooting">here</a> for troubleshooting.</small></center></p>
+				<p>Above you should see a faithful recreation of a <a href="https://deltarune.wiki/w/File:Dark_Sanctuary_location.png">prophecy pane</a>, as seen throughout Deltarune Chapter 4. It is written entirely in CSS, with a small amount of HTML to display the graphic.</p>
+				<p>This one has been modified to display the graphic used on this website's <a href="/">homepage</a>. It is an animated version of the profile picture that I use across several of my accounts on various websites. In case you don't know, it features a pixel art version of Shaggy from chill station's version of <a href="https://youtu.be/4feUSTS21-8">"You reposted in the wrong neighborhood"</a>, mirrored horizontally.</p></p>
+				<p></p>
+				<h2>Prophecy... what now?</h2>
+				<p>If you don't know what I'm talking about, stop reading now and <a href="https://store.steampowered.com/app/1671210/DELTARUNE/">go buy and play the game</a>. If you don't think you'll like it, <a href="https://tobyfox.itch.io/deltarune#download">play the demo</a>, <i>then</i> <a href="https://store.steampowered.com/app/1671210/DELTARUNE/">buy and play the rest of the game</a>. I'm quite sure you'll have a good time, and maybe even enjoy the story as well.</p>
+				<p><small>(although chapter 1 was kind of mid in my opinion, at least compared to the rest of the game...)</small></p>
+				<h2>Why did you make this?</h2>
+				<p>This is my favourite effect in Deltarune so far. If you've been following me for a while, you'll notice my profile pic on a lot of my accounts got updated to this one shortly after I played Chapter 4 (late-June 2025).</p>
+				<h2><i>How</i> did you make this?!</h2>
+				<p>With HTML, CSS, and difficulty (seriously, this is the third programming language I've attempted to make this in). JavaScript was not required to make this demo, although it will be needed for customisations (Coming Soon™).
+				<h2>Bugs/TODOs</h2>
+				<ul>
+					<li>No customisability at all. Planned for a future update, and will replace this page.</li>
+					<li>Possible timing issues compared to base game, TBD.</li>
+					<li>Only one colour is currently supported: the default in-game one.
+						<p><ul>
+							<li>There exists an implementation for the Second Sanctuary colours (more purple hue, including some rendering bug emulation from the base game!) using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">CSS filters</a>.</li>
+							<li>JavaScript will most likely be used to toggle between the two, defaulting to the regular colours.</li>
+							<li>Full custom colours may be trickier, depending on how I want to do it.</li>
+						</ul></p>
+					</li>
+					<li>Possible alignment issues with the three main elements (background, foreground image, and text).</li>
+					<li>...and probably a lot more, including browser compatibility quirks (this was mainly tested on the latest version of Firefox, although I did test this on a few different platforms and browser engines).</li>
+				</ul>
+				<h2><a id="troubleshooting">Troubleshooting</a></h2>
+				<ul>
+					<li>If you're experiencing any of the following issues, update to the latest version of a modern browser (e.g. Firefox, Chrome):</p>
+						<p><ul>
+							<li>No image at all (blank space)</li>
+							<li>Blurry image</li>
+							<li>Lack of animation (i.e. completely still image)</li>
+						</ul></p>
+					</li>
+					<li>If the animation is laggy or freezes, your computer/phone/<a href="https://en.wikipedia.org/wiki/Smart_refrigerator">smart fridge</a> is likely too old/underpowered to run it at full speed. You'll need to try again on a more modern/powerful device (sorry).
+						<p><ul>
+							<li>That being said, I got this working just fine (although somewhat slowly) on an <a href="">iPod touch 5th gen</a> running iOS 8 (iOS 9 on does not exist on A5 devices, and you cannot convince me otherwise).</li>
+						</ul></p>
+					</li>
+					<li>If the text and/or image is cut off, you'll have to zoom out the page if possible. ProphGen was not optimised very well for mobile devices, and I don't know how to fix it without a significant rewrite. An option will be added to adjust the size of the prophecy pane in the future.</li>
+				</ul>
+			</div>
+		</main>
+		<div class="footer-wrapper">
+			<footer>
+				<p><a href="#">Back to top</a></p>
+				<p>🚧 Website under construction, please be patient! 🚧</p>
+				<small><p>Copyright © Sparronator9999 2025. Unless otherwise noted, the contents of this website are licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+				<p>This page contains modified assets from <a href="https://deltarune.com">Deltarune</a>, © Toby Fox 2017-2025. Sparrronator9999 believes these assets are used in a way that falls under fair use. Not associated with Toby Fox or any of the Deltarune team.</p>
+				<p>Made in Australia from 100% Australian contributions.</p>
+				<p>Last updated: 25/09/2025</p></small>
+			</footer>
+		</div>
+	</body>
+</html>

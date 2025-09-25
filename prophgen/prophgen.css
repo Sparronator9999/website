@@ -1,0 +1,196 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *   DELTARUNE Prophecy Generator (ProphGen)
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *      Copyright © Sparronator9999 2025.
+ *     https://github.com/Sparronator9999
+ *
+ * Please credit me by linking back to my GitHub
+ *      if using on your own site. Thanks!
+ */
+
+@-webkit-keyframes fade
+{
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes fade
+{
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@-webkit-keyframes hoover
+{
+	from { top: 12px; }
+	to { top: 0px; }
+}
+@keyframes hoover
+{
+	from { top: 12px; }
+	to { top: 0px; }
+}
+
+@-webkit-keyframes hoover-fg2
+{
+	from { top: calc(60% + 12px); left: calc(50% + 12px); }
+	to { top: calc(60% - 12px); left: calc(50% - 12px); }
+}
+@keyframes hoover-fg2
+{
+	from { top: calc(60% + 12px); left: calc(50% + 12px); }
+	to { top: calc(60% - 12px); left: calc(50% - 12px); }
+}
+
+@-webkit-keyframes hoover-fg3
+{
+	from { top: calc(60% + 24px); left: calc(50% + 24px); }
+	to { top: calc(60% - 24px); left: calc(50% - 24px); }
+}
+@keyframes hoover-fg3
+{
+	from { top: calc(60% + 24px); left: calc(50% + 24px); }
+	to { top: calc(60% - 24px); left: calc(50% - 24px); }
+}
+
+@-webkit-keyframes depth-rev
+{
+	from { background-position: 0 0; }
+	to { background-position: 112812px 112812px; }
+}
+@keyframes depth-rev
+{
+	from { background-position: 0 0; }
+	to { background-position: 112812px 112812px; }
+}
+
+@-webkit-keyframes depth
+{
+	from { background-position: 0 0; }
+	to { background-position: -112812px -28203px; }
+}
+@keyframes depth
+{
+	from { background-position: 0 0; }
+	to { background-position: -112812px -112812px; }
+}
+
+@-webkit-keyframes linecol
+{
+	from { background-color: #0e8e99; }
+	to { background-color: #538c8f; }
+}
+@keyframes linecol
+{
+	from { background-color: #0e8e99; }
+	to { background-color: #538c8f; }
+}
+
+@keyframes hsv-shift
+{
+	from { filter: none };
+	to { filter: hue-rotate(10deg) brightness(0.9) saturate(0.9) };
+}
+
+.prophfg, .prophtext
+{
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: 100%;
+	mask-size: 100%;
+}
+
+.prophbg, .prophfg, .prophmg, .prophtext
+{
+	image-rendering: pixelated;
+}
+
+.prophbg, .prophfg, .prophmg
+{
+	position: absolute;
+	width: 450px;
+	height: 270px;
+	top: 60%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-60%);
+	transform: translate(-50%,-60%);
+}
+
+.prophecy
+{
+	background: #000;
+	box-sizing: initial;
+	position: relative;
+	-webkit-animation: hoover 1.26s ease-in-out 0s infinite alternate, fade 0.5s linear 1;
+	animation: hoover 1.26s ease-in-out 0s infinite alternate, fade 0.5s linear 1;
+	width: 480px;
+	height: 360px;
+	margin: 0 0 2em;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	overflow: hidden;
+}
+
+.prophtext
+{
+	-webkit-animation: depth-rev 2400s linear 0s infinite;
+	animation: depth-rev 2400s linear 0s infinite;
+	width: 282px;
+	height: 30px;
+	background: url("t.png");
+	background-size: 948px 714px;
+	-webkit-mask-image: url("default-text.png");
+	mask-image: url("default-text.png");
+	position: absolute;
+	left: 50%;
+	top: 8px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.prophbg
+{
+	-webkit-animation: depth 2400s linear 0s infinite,linecol 25.133s ease-in-out -6.283s infinite alternate;
+	animation: depth 2400s linear 0s infinite,linecol 25.133s ease-in-out 0s infinite alternate;
+	background: url("bg.png");
+	background-blend-mode: multiply;
+	background-size: 948px 714px;
+	mix-blend-mode: screen;
+}
+
+.prophmg
+{
+	background-image:
+		-webkit-linear-gradient(90deg,black,rgba(0,0,0,0) 27%,rgba(0,0,0,0) 73%,black),
+		-webkit-linear-gradient(0deg,black,rgba(0,0,0,0) 44%,rgba(0,0,0,0) 56%,black);
+	background-image:
+		linear-gradient(90deg,#000,rgba(0,0,0,0) 120px,rgba(0,0,0,0) 330px,#000),
+		linear-gradient(0deg,#000,rgba(0,0,0,0) 120px,rgba(0,0,0,0) 150px,#000);
+}
+
+.prophfg
+{
+	-webkit-animation: depth-rev 2400s linear 0s infinite;
+	animation: depth-rev 2400s linear 0s infinite;
+	background: url("fg.png");
+	background-size: 948px 714px;
+	-webkit-mask-image: url("default-fg.png");
+	mask-image: url("default-fg.png");
+}
+
+.prophfg2, .prophfg3
+{
+	opacity: 0.15;
+}
+
+.prophfg2
+{
+	-webkit-animation: depth-rev 2400s linear 0s infinite, hoover-fg2 1.26s ease-in-out 0s infinite alternate;
+	animation: depth-rev 2400s linear 0s infinite, hoover-fg2 1.26s ease-in-out 0s infinite alternate;
+}
+
+.prophfg3
+{
+	-webkit-animation: depth-rev 2400s linear 0s infinite, hoover-fg3 1.26s ease-in-out 0s infinite alternate;
+	animation: depth-rev 2400s linear 0s infinite, hoover-fg3 1.26s ease-in-out 0s infinite alternate;
+}
