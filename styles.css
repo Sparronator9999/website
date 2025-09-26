@@ -41,16 +41,20 @@ hr
 	margin: 2.5rem auto;
 }
 
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	text-align: center;
+}
+
 h1,h2,h3
 {
 	font-family: "MixSerifCondense", "Noto Serif", "Liberation Serif", "Times New Roman", serif;
 	font-stretch: condensed;
-	text-align: center;
 }
 h4,h5,h6
 {
 	font-family: "Consolas", "Roboto Mono", "Monaco", "SF Mono", "Menlo", monospace;
-	text-align: center;
 }
 h1
 {
