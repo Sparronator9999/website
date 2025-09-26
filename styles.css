@@ -4,7 +4,6 @@
 	font-family: "MixSerifCondense";
 	src: local("MixSerifCondense"), url("/fonts/MixSerifCondense.ttf");
 	font-stretch: condensed;
-	size-adjust: 125%;
 }
 
 @keyframes hover1
@@ -47,10 +46,11 @@ h1,h2,h3,h4,h5,h6
 	text-align: center;
 }
 
-h1,h2,h3
+h1,h2,h3,nav a
 {
 	font-family: "MixSerifCondense", "Noto Serif", "Liberation Serif", "Times New Roman", serif;
 	font-stretch: condensed;
+	font-size-adjust: 0.438;
 }
 h4,h5,h6
 {
@@ -58,16 +58,16 @@ h4,h5,h6
 }
 h1
 {
-	font-size: 38.4px;
+	font-size: 36pt;
 }
-h2,h3
+h2,h3,nav a
 {
-	font-size: 25.6px;
+	font-size: 24pt;
 }
 
 .huge
 {
-	font-size: 76.8px;
+	font-size: 72pt;
 }
 
 .center
@@ -232,7 +232,6 @@ nav
 nav a
 {
 	padding: 0.6rem 1.2rem;
-	font: 25.6px "MixSerifCondense", "Noto Serif", "Liberation Serif", "Times New Roman", serif;
 	filter: contrast(100.00001%);
 	text-transform: uppercase;
 }
