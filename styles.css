@@ -240,17 +240,17 @@ nav a:hover
 .nav-here
 {
 	background-color: #171524;
-	color: #8ff;
+	color: #0ff;
 }
 
 a[href]
 {
 	text-decoration: none;
-	color: #42c0f6;
+	color: #0af;
 }
 a[href]:hover
 {
-	color: #8ff;
+	color: #0ff;
 }
 
 @media (prefers-reduced-motion: no-preference)
